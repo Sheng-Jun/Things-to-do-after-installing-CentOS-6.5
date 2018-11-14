@@ -68,3 +68,15 @@ sudo yum localinstall AdbeRdr9.5.5-1_i486linux_enu.rpm</code></pre>
 12. 調整檔案管理   
 
 系統>偏好設定>檔案管理>運作方式:總是以瀏覽視窗開啟
+
+# Install minimal desktop on CentOS 6.3
+
+ref: https://unix.stackexchange.com/questions/61892/install-minimal-desktop-on-centos-6-3
+
+<pre><code># yum groupinstall basic-desktop desktop-platform x11 fonts</code></pre>
+
+<pre><code>vi /etc/inittab</code></pre>
+
+Change <pre><code>id:3:initdefault:</code></pre> to <pre><code>id:5:initdefault:</code></pre>
+
+<pre><code>reboot</code></pre>
