@@ -96,3 +96,22 @@ ref2: https://dokuwiki.tachtler.net/doku.php?id=tachtler:centos_7_-_minimal_desk
 4. <code># ln -sf /lib/systemd/system/graphical.target /etc/systemd/system/default.target</code>
 
 5. <code># reboot</code>
+
+# Config shh to local VM Centos
+
+ref: https://luppeng.wordpress.com/2017/07/17/enabling-virtualbox-host-only-adapter-on-mac-os-x/
+
+1. Create a new virtual network interface (VirtualBox 5.2.X)
+
+    Launch VirtualBox and click on “File > Host Network Manager” on the Menu Bar (Or press “Command” + “W” )
+    Click on the “Create” button in the Host Network Manager window
+    This will create a host-only network called “vboxnet0”
+    Select if you want this Host-only network to have DHCP Server enabled
+    Close the Host Network Manager Window
+    
+2. Change the adapter type of your virtual machine
+
+    Settings.> Enable an adapter (Host-only Adapter) and attach it to vboxnet0.
+    
+
+
