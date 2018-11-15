@@ -73,18 +73,25 @@ sudo yum localinstall AdbeRdr9.5.5-1_i486linux_enu.rpm</code></pre>
 
 ref: https://unix.stackexchange.com/questions/61892/install-minimal-desktop-on-centos-6-3
 
-1. <pre><code># yum groupinstall basic-desktop desktop-platform x11 fonts</code></pre>
-2. <pre><code>vi /etc/inittab</code></pre>
+1. <code># yum groupinstall basic-desktop desktop-platform x11 fonts</code>
+
+2. <code>vi /etc/inittab</code>
 Change <code>id:3:initdefault:</code> to <code>id:5:initdefault:</code>
+
 3. <pre><code>reboot</code></pre>
 
 # Install minimal desktop on CentOS 7
 
 ref1: https://www.centos.org/forums/viewtopic.php?t=47088
+
 ref2: https://dokuwiki.tachtler.net/doku.php?id=tachtler:centos_7_-_minimal_desktop_installation
 
-1. <pre><code>yum groupinstall "X Window System"</code></pre>
-2. <pre><code>yum install gnome-classic-session gnome-terminal nautilus-open-terminal control-center liberation-mono-fonts</code></pre>
-3. <pre><code>unlink /etc/systemd/system/default.target</code></pre>
-4. <pre><code>ln -sf /lib/systemd/system/graphical.target /etc/systemd/system/default.target</code></pre>
-5. <pre><code>reboot</code></pre>
+1. <code>yum groupinstall "X Window System"</code>
+
+2. <code>yum install gnome-classic-session gnome-terminal nautilus-open-terminal control-center liberation-mono-fonts</code>
+
+3. <code>unlink /etc/systemd/system/default.target</code>
+
+4. <code>ln -sf /lib/systemd/system/graphical.target /etc/systemd/system/default.target</code>
+
+5. <code>reboot</code>
