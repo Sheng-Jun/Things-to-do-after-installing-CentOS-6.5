@@ -99,7 +99,9 @@ ref2: https://dokuwiki.tachtler.net/doku.php?id=tachtler:centos_7_-_minimal_desk
 
 # Config ssh to local VM Centos
 
-ref: https://luppeng.wordpress.com/2017/07/17/enabling-virtualbox-host-only-adapter-on-mac-os-x/
+ref1: https://luppeng.wordpress.com/2017/07/17/enabling-virtualbox-host-only-adapter-on-mac-os-x/
+
+ref2: http://slopjong.de/2013/05/14/virtualbox-make-your-virtual-machine-accessible-from-your-host-system-but-not-from-the-local-network/
 
 1. Create a new virtual network interface (VirtualBox 5.2.X)
 
