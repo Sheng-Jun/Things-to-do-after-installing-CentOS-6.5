@@ -79,7 +79,7 @@ ref: https://unix.stackexchange.com/questions/61892/install-minimal-desktop-on-c
 
 Then change <code>id:3:initdefault:</code> to <code>id:5:initdefault:</code>
 
-3. <pre><code># reboot</code></pre>
+3. <code># reboot</code>
 
 # Install minimal desktop on CentOS 7
 
