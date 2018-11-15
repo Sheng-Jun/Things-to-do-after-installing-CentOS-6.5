@@ -75,10 +75,11 @@ ref: https://unix.stackexchange.com/questions/61892/install-minimal-desktop-on-c
 
 1. <code># yum groupinstall basic-desktop desktop-platform x11 fonts</code>
 
-2. <code>vi /etc/inittab</code>
-Change <code>id:3:initdefault:</code> to <code>id:5:initdefault:</code>
+2. <code># vi /etc/inittab</code>
 
-3. <pre><code>reboot</code></pre>
+Then change <code>id:3:initdefault:</code> to <code>id:5:initdefault:</code>
+
+3. <pre><code># reboot</code></pre>
 
 # Install minimal desktop on CentOS 7
 
@@ -86,12 +87,12 @@ ref1: https://www.centos.org/forums/viewtopic.php?t=47088
 
 ref2: https://dokuwiki.tachtler.net/doku.php?id=tachtler:centos_7_-_minimal_desktop_installation
 
-1. <code>yum groupinstall "X Window System"</code>
+1. <code># yum groupinstall "X Window System"</code>
 
-2. <code>yum install gnome-classic-session gnome-terminal nautilus-open-terminal control-center liberation-mono-fonts</code>
+2. <code># yum install gnome-classic-session gnome-terminal nautilus-open-terminal control-center liberation-mono-fonts</code>
 
-3. <code>unlink /etc/systemd/system/default.target</code>
+3. <code># unlink /etc/systemd/system/default.target</code>
 
-4. <code>ln -sf /lib/systemd/system/graphical.target /etc/systemd/system/default.target</code>
+4. <code># ln -sf /lib/systemd/system/graphical.target /etc/systemd/system/default.target</code>
 
-5. <code>reboot</code>
+5. <code># reboot</code>
